@@ -16,15 +16,7 @@ const RightSide = ({title})=>{
 function App() {
   return (
     <>
-    {/* We have a  two way to  use SplitPage  */}
-    {/* first one */}
-    {/* <SplitPage Left={LeftSide} Right={RightSide} leftWidth={1} rightWidth={3}/> */}
 
-    {/* second one */}
-    <SplitPage leftWidth={1} rightWidth={3}>
-    <LeftSide title={'I m LeftOne!'}/>
-    <RightSide title={'I m RightOne!'}/>
-    </SplitPage>
 
     </>
   );
