@@ -16,7 +16,7 @@ const RightSide = ({title})=>{
 function App() {
   return (
     <>
-    {/* We have way to used SplitPage  */}
+    {/* We have a  two way to  use SplitPage  */}
     {/* first one */}
     {/* <SplitPage Left={LeftSide} Right={RightSide} leftWidth={1} rightWidth={3}/> */}
 
