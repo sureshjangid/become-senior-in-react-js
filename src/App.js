@@ -1,10 +1,13 @@
 import './App.css';
-import { SplitPage } from './components/split-page';
-
+import Modal from './componets/Modal';
+import SimpleTable from './componets/Table';
+  
 function App() {
   return (
     <>
-
+<Modal>
+  <SimpleTable/>
+</Modal>
 
     </>
   );
