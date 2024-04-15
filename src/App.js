@@ -1,22 +1,23 @@
 import './App.css';
-import { SplitPage } from './components/split-page';
+import LargeListItems from './components/authors/LargeListItems';
+import SmallListItems from './components/authors/SmallListItems';
+import { authors } from './components/data/authors';
+import { books } from './components/data/books';
+import RegularList from './components/lists/Regular';
+import LargeList from './components/books/LargeListItems';
+import SmallList from './components/books/SmallListItems';
 
 
-const LeftSide = ({title})=>{
-  return (
-    <h1 style={{background:"red"}}> {title}</h1>
-  )
-}
 
-const RightSide = ({title})=>{
-  return (
-    <h1 style={{background:"pink"}}> {title}</h1>
-  )
-}
 function App() {
   return (
     <>
 
+{/* <RegularList item={authors} sourceName={'authors'} ItemComponents={SmallListItems}/> */}
+{/* <RegularList item={authors} sourceName={'authors'} ItemComponents={LargeListItems}/> */}
+<RegularList item={books} sourceName={'books'} ItemComponents={LargeList}/>
+
+<RegularList item={books} sourceName={'books'} ItemComponents={SmallList}/>
 
     </>
   );
