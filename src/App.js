@@ -10,6 +10,8 @@ function App() {
     <button onClick={()=>setTab(0)}>User Data</button>
     <button onClick={()=>setTab(1)}>Post Data</button>
 
+{/* we have two way  */}
+{/* first */}
 {/* {tab==0 && 
     <ResourceURL resouceName={'data'} resoureURL={'users'}>
       <MappingData/>
@@ -22,6 +24,7 @@ function App() {
     </ResourceURL>
     } */}
 
+{/* second */}
 {tab==0 && 
     <ResourceLoaderWithRender resoureURL={'users'} render={(resource)=> <MappingData data={resource}/>}/>
     }
