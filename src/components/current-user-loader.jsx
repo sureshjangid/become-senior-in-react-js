@@ -9,6 +9,7 @@ const CurrentUserLoader = ({children}) => {
       "id": 1,
       "name": "Leanne Graham",
       "username": "Bret",
+      "phone": "1111111111",
       "email": "Sincere@april.biz",}
 
     ]
@@ -19,15 +20,13 @@ const CurrentUserLoader = ({children}) => {
         })();
     },[])
 
-    console.log(user,'user')
   return (
     <>
     {React.Children?.map(children,(child)=>{
         if(React.isValidElement(child)){
-
-            return React.cloneElement(child,{user})
+             return React.cloneElement(child,{user})
         }
-        return child;
+        // return child;
 
     })}
     </>
