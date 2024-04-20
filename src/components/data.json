@@ -1,0 +1,37 @@
+[
+    {
+      "imageUrl": "https://img.freepik.com/free-photo/portrait-lion-ai-generated_268835-4278.jpg",
+      "title": "Special title treatment 1",
+      "body": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "buttonText": "Go somewhere",
+      "buttonUrl": "#"
+    },
+    {
+      "imageUrl": "https://img.freepik.com/free-photo/lion-female-portrait_1268-85.jpg?size=626&ext=jpg",
+      "title": "Special title treatment 2",
+      "body": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "buttonText": "Go somewhere",
+      "buttonUrl": "#"
+    },
+    {
+      "imageUrl": "https://img.freepik.com/free-photo/portrait-female-lion_141793-3283.jpg?size=626&ext=jpg",
+      "title": "Special title treatment 3",
+      "body": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "buttonText": "Go somewhere",
+      "buttonUrl": "#"
+    },
+    {
+      "imageUrl": "https://img.freepik.com/free-photo/portrait-lion_1268-79.jpg?size=626&ext=jpg",
+      "title": "Special title treatment 4",
+      "body": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "buttonText": "Go somewhere",
+      "buttonUrl": "#"
+    },
+    {
+      "imageUrl": "https://img.freepik.com/free-photo/lion-female-portrait_1268-100.jpg?size=626&ext=jpg",
+      "title": "Special title treatment 5",
+      "body": "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "buttonText": "Go somewhere",
+      "buttonUrl": "#"
+    }
+]
