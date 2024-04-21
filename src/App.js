@@ -1,29 +1,19 @@
-import React, { useState } from 'react';
+import { useRef, useState } from 'react';
 import './App.css';
-import { createPortal } from 'react-dom';
-import Alert from './components/alert';
+import {Input} from './components/input';
 
 function App() {
-  const [show, setShow] = useState(false);
+  const inputRef= useRef();
 
-  const handleAlert = () => {
-    setShow(true);
-  };
-
-  
-  const handleClose = () => {
-    setShow(false);
-  };
+  const handleClick  =()=>{
+    console.log(inputRef.current.value);
+  }
+ 
   return (
-    <div className="container">
-      <div className="other-components">
-        <h1>Other Components</h1>
-        <button onClick={handleAlert}>Alert</button>
-      <Alert  show={show} children onClose={handleClose}>
-      Successfully login
-      </Alert>
-      </div>
-    </div>
+    <>
+    <Input ref={inputRef}/>
+    <button onClick={()=>handleClick()}>submit</button>
+    </>
   );
 }
 
