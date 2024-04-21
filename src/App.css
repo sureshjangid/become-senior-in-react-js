@@ -12,6 +12,17 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.alert {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 
 .App-header {
   background-color: #282c34;
