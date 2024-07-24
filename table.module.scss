@@ -1,0 +1,256 @@
+@import 'src/scss/main.module.scss';
+table,
+tr,
+th,
+td {
+	border-collapse: collapse;
+	border: 1px solid #ebebeb;
+	text-align: left;
+}
+table {
+	thead {
+		tr {
+			th {
+				padding:10px 10px;
+				border: 0;
+			}
+		}
+	}
+}
+
+table {
+	width: 100%;
+}
+
+td,
+th {
+	padding: 5px 10px;
+}
+
+.rolePermission {
+	.subTable {
+		@include border-radius(0px 5px 5px 5px);
+	}
+	form {
+		display: flex;
+		width: 70%;
+		[class*='col_3'] {
+			padding-left: 0;
+    		padding-right: 3px;
+		}
+		[class*='secondary'] {
+			align-items: center;
+			line-height: 15px;
+			display: flex;
+			margin-top: 18px;
+		}
+	}
+
+	.roleTable {
+		display: flex;
+	}
+	input[type=checkbox] {
+		width: 16px;
+		height: 16px;
+		border:solid 1px $gray;
+		
+	}
+	input[type=checkbox]:checked::before {
+		transform: scale(1);
+	}
+	input[type=checkbox]::before {
+		content: "";
+		width: 8px;
+		height: 8px;
+		transform: scale(0);
+		transition: 120ms transform ease-in-out;
+		box-shadow: inset 3em 3em $blue;
+	}
+	
+}
+
+
+//Add New User
+.rolePermission {
+	position: relative;
+}
+.addNewuser {
+	position: absolute;
+    top: -36px;
+    right: 15px;
+}
+
+
+// Tab Button
+.subtabHeader {
+	background: $white;
+	padding: 0 15px;
+	.subTab {
+		align-items: center;
+    	justify-content: space-between;
+		display: flex;
+		border-bottom: solid 1px $border-Color;
+		.tabButton {
+			button {
+				margin: 0;
+				border: 0px;
+				padding: 0px 20px;
+				margin-right: 2px;
+				padding-bottom: 0px !important;
+				transition: all 0.3s ease;
+				line-height: 32px;
+				&:hover {
+					background-color: $white !important;
+					color:$blue !important;
+					transition: all 0.3s ease;
+				}
+			}
+		} 
+		.searchFilter {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			.searchBox {
+				display: flex;
+				background:$grayLit;
+				@include border-radius(3px);
+				svg {
+					width: 32px;
+					height: 30px;
+					padding: 6px;
+					
+				}
+				input {
+					border-radius: 0;
+					border-bottom: 0;
+					border-top: 0;
+					border-right: 0;
+					border-left: solid 1px #ccc;
+					background: none;
+				}
+			}
+			
+			svg {
+				width: 24px;
+				height: auto;
+				margin-left: 5px;
+				padding-top: 5px;
+				cursor: pointer;
+			}
+			[class*='openfilter'] {
+				position: fixed;
+				background: #1d1c1c6b;
+				width: 100%;
+				height: 100%;
+				z-index: 9;
+				top: 0;
+				right: 0;
+				transition: all 0.9s ease;
+			}
+			.filterSidebar {
+				.sideFilter {
+					position:fixed;
+					right:0px;
+					top:0;
+					bottom: auto;
+					width: 300px;
+					height: 100%;
+					z-index:1;
+					background:$white;
+					@include border-radius(10px, 0, 0, 10px);
+					.header {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding-bottom: 3px;
+						margin-bottom: 15px;
+						padding: 10px 13px 10px;
+						border-bottom:solid 1px $border-Color;
+						@include border-radius(10px, 0, 0, 0px);
+						@include box-shadow(0px, 1px, 5px);
+						span {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							color: $DBlue;
+							&:first-child {
+								font-weight:$font-weight600;
+								font-size: 14px;
+							}
+							svg {
+								margin-left: 0;
+								margin-right: 5px;
+								padding-top: 0;
+								color: #0E2B57;
+								width: 20px;
+							}
+						}
+					}
+					.bottompart {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						padding: 0 15px;
+						position: fixed;
+						bottom: 15px;
+						right: 0;
+						width: inherit;
+						button {
+							margin-bottom: 0;
+							padding: 2px 50px;
+							
+						}
+					}
+					form {
+						width: 100%;
+						display: block;
+						[class*='col_12'] {
+							margin-bottom: 16px;
+						}
+						[class*='selectDemo'] {
+							height: 36px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	
+}
+
+
+// Surveys Filter
+.surveysFilter {
+	width: 100%;
+	.dateRang {
+		position: relative;
+		svg {
+			width:17px;
+			height: 17px;
+			position: absolute;
+			bottom: 54px;
+		}
+		[class*='labelName'] {
+			position: absolute;
+			top: -9px;
+		}
+	}
+}
+
+.clearFitler {
+	background: transparent;
+	border: 0;
+	position: absolute;
+    top: 12px;
+    right: 7px;
+	&:hover {
+		color: $blue;
+	}
+}
+
+.noData {
+	margin: auto;
+    padding: 150px 0;
+    text-align: center;
+} 
